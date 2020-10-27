@@ -1,0 +1,24 @@
+.container{
+    height: 100vh;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabelka,th,td{
+    border: solid 1px red;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+.row{
+    text-align: center;
+    background-color: white;
+    
+}
+
+th{
+    background-color: beige;
+    padding: 2rem;
+}
