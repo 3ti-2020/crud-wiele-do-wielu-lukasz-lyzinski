@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container">
+        <div class="main1">
     <?php
 
                 $conn = new mysqli("localhost", "root", "", "tom");
@@ -30,6 +31,14 @@
 
 
 ?>
+</div>
+<div class="main2">
+    <form class="pasek" action="insert.php" method="post">
+        <input type="text" name="imie" >
+        <input type="text" name="nazwa">
+        <input type="submit" value="SEND">
+    </form>
+</div>
 </div>
 <script src="main.js"></script>
 </body>

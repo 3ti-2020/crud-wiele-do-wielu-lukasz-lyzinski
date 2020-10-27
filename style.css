@@ -1,9 +1,12 @@
 .container{
     height: 100vh;
-    background-color: teal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+   grid-template-areas: 
+   "main1 main1"
+   "main2 main2"
+   ;
 }
 
 .tabelka,th,td{
@@ -21,4 +24,25 @@
 th{
     background-color: beige;
     padding: 2rem;
+}
+
+.main1{
+    grid-area: main1;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main2{
+    grid-area: main2;
+    background-color: turquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pasek{
+    display: flex;
+    flex-direction: column;
 }
