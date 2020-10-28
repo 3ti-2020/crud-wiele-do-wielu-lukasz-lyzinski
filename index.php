@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Łukasz Łyziński gr. 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,9 +11,9 @@
         <div class="main1">
     <?php
 
-                $conn = new mysqli("localhost", "root", "", "tom");
+$conn = new mysqli("sql7.freemysqlhosting.net", "sql7373168", "tmSP9U89xx", "sql7373168");
 
-                $result = $conn->query("SELECT lib_tytul.id as id,imie, nazwa FROM lib_tytul, lib_autor_tytul, lib_autor WHERE lib_autor_tytul.id_autor=lib_autor.id AND lib_autor_tytul.id_tytul=lib_tytul.id");
+                $result = $conn->query("SELECT lib_autor_tytul.id as id,imie, nazwa FROM lib_tytul, lib_autor_tytul, lib_autor WHERE lib_autor_tytul.id_autor=lib_autor.id AND lib_autor_tytul.id_tytul=lib_tytul.id");
 
                 echo("<table clas='tabelka'>");
                 echo("
