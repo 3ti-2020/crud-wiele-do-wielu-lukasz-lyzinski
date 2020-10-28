@@ -9,6 +9,7 @@
 <body>
     <div class="container">
         <div class="main1">
+        <h1>Łukasz Łyziński nr 9</h1>
     <?php
 
 $conn = new mysqli("sql7.freemysqlhosting.net", "sql7373168", "tmSP9U89xx", "sql7373168");
