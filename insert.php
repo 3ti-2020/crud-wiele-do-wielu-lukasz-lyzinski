@@ -1,15 +1,26 @@
 <?php
-
 $conn = new mysqli("sql7.freemysqlhosting.net", "sql7373168", "tmSP9U89xx", "sql7373168");
 
 $imie=$_POST['imie'];
-$imie=$_POST['nazwa'];
 
-$sql1="INSERT into `lib_autor` (`id`,`imie`) values (NULL,'$imie')";
-$sql2="INSERT into `lib_tytul` (`id`,`nazwa`) values (NULL,'$nazwa')";
+$sql="INSERT into lib_autor(id_autor, imie) values (NULL,'$imie') ";
 
-$conn->query($sql1);
-$conn->query($sql2);
+mysqli_query($conn,$sql);
+header("http://127.0.0.1/lib/");
 
-header("Location:http://127.0.0.1/lib/");
 ?>
+
+<?php
+$conn = new mysqli("sql7.freemysqlhosting.net", "sql7373168", "tmSP9U89xx", "sql7373168");
+
+$tytul=$_POST['tytul'];
+
+$sql="INSERT into lib_tytul(id_tytul, tytul) values (NULL,'$tytul') ";
+
+mysqli_query($conn,$sql);
+header("http://127.0.0.1/lib/");
+
+?>
+
+
+
