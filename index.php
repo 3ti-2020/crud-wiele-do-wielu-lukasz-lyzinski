@@ -44,30 +44,7 @@ $conn = new mysqli("sql7.freemysqlhosting.net", "sql7373168", "tmSP9U89xx", "sql
         <input type="text" name="imie" >
         <input type="text" name="tytul">
         <input type="submit" value="SEND">
-    </form>
-    <?php
-
-$conn = new mysqli("sql7.freemysqlhosting.net", "sql7373168", "tmSP9U89xx", "sql7373168");
-
-    $result_autor = $conn->query("SELECT * FROM lib_autor");
-    $result_tytuly = $conn->query("SELECT * FROM lib_tytul");
-
-    echo("<form action='insert1.php' class='ins' method='POST'>");
-    echo("<select name='autor'>");
-    while($wiersz=$result_autor->fetch_assoc() ){
-        echo("<option value='".$wiersz['id_autor']."'>".$wiersz['imie']." </option>");
-    }
-    echo("</select>");
-
-    echo("<select name='tytul1'>");
-    while($wiersz=$result_tytuly->fetch_assoc() ){
-        echo("<option value='".$wiersz['id_tytul']."'>".$wiersz['tytul']."</option>");
-    }
-    echo("</select>");
-
-    echo("<input type='submit' value='INSERT'>");
-    echo("</form>");
-?> 
+    </form> 
 </div>
 </div>
 <script src="main.js"></script>
