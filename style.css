@@ -1,11 +1,11 @@
 .container{
     height: 100vh;
     display:grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
    grid-template-areas: 
-   "main1 main1"
-   "main2 main2"
+   "main0 main0 main1 main1"
+   "main2 main2 main2 main2"
    ;
 }
 
@@ -33,6 +33,15 @@ th{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: scroll;
+}
+.main0{
+    grid-area: main0;
+    background-color: tan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .main2{
@@ -51,4 +60,29 @@ th{
 }
 .ins{
     display: flex;
+}
+
+.menu1{
+    list-style:none;
+    display: flex;
+}
+
+.pasek1{
+    margin: 20px;
+    background-color: red;
+    font-size: 300%;
+    padding:5px;
+    
+    
+}
+
+.pasek1:hover{
+    background-color: white;
+}
+
+.tekst{
+    text-decoration: none;
+    color: black;
+    
+    
 }
