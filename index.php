@@ -10,7 +10,6 @@
     <div class="container">
         <div class="main0">
         <ul class="menu1">
-                <li class="pasek1"><a class="tekst" href="index.php">Strona</a></li>
                 <li class="pasek1"><a class="tekst" href="asd/index.html">Karta</a></li>
             </ul> 
         </div>
