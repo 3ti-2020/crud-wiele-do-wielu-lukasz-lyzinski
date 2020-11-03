@@ -2,6 +2,27 @@
 
 .container{
     height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "main main"
+    "main main"
+    ;
+}
+.header{
+    
+    grid-area: header;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    grid-area: main;
     background-image: linear-gradient(to bottom right, #9effea 0% 65%, #70D686 95% 100%);
     display: flex;
     justify-content: center;
@@ -271,5 +292,30 @@ h2.imie {
     background-color: #FFC427;
     transform: scale(1.1);
     cursor: pointer;
+    
+}
+
+.menu1{
+    list-style:none;
+    display: flex;
+}
+
+.pasek1{
+    margin: 20px;
+    background-color: red;
+    font-size: 300%;
+    padding:5px;
+    
+    
+}
+
+.pasek1:hover{
+    background-color: white;
+}
+
+.tekst{
+    text-decoration: none;
+    color: black;
+    
     
 }
