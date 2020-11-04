@@ -1,26 +1,19 @@
 <?php
-$conn = new mysqli("sql7.freemysqlhosting.net", "sql7373168", "tmSP9U89xx", "sql7373168");
+$conn = new mysqli("sql7.freemysqlhosting.net", "sql7374422", "NmBYIP3fmp", "sql7374422");
 
-$imie=$_POST['imie'];
+$imie = $_POST['imie'];
+$tytul = $_POST['tytul'];
 
-$sql="INSERT into lib_autor(id_autor, imie) values (NULL,'$imie') ";
-
-mysqli_query($conn,$sql);
-header("http://127.0.0.1/lib/");
-
+$sql1 = "INSERT INTO `lib_autor`(`id_autor`, `imie`) VALUES (NULL, '$imie')";
+if ($conn->query($sql1) === TRUE) {
+    $last_id1 = $conn->insert_id;
+  }
+$sql2 = "INSERT INTO `lib_tytul`(`id_tytul`, `tytul`) VALUES (NULL, '$tytul')";
+if ($conn->query($sql2) === TRUE) {
+    $last_id2 = $conn->insert_id;
+  }
+$sql3 = "INSERT INTO `lib_autor_tytul`(`id`, `id_autor`, `id_tytul`) VALUES (NULL,$last_id1,$last_id2)";
+$conn->query($sql3);
+mysqli_close($conn);
+header("Location: https://lukasz-lyzinski-crud.herokuapp.com/");
 ?>
-
-<?php
-$conn = new mysqli("sql7.freemysqlhosting.net", "sql7373168", "tmSP9U89xx", "sql7373168");
-
-$tytul=$_POST['tytul'];
-
-$sql="INSERT into lib_tytul(id_tytul, tytul) values (NULL,'$tytul') ";
-
-mysqli_query($conn,$sql);
-header("http://127.0.0.1/lib/");
-
-?>
-
-
-
