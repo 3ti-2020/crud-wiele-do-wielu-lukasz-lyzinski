@@ -11,6 +11,7 @@
         <div class="main0">
         <ul class="menu1">
                 <li class="pasek1"><a class="tekst" href="asd/index.html">Karta</a></li>
+                <li class="pasek1"><a class="tekst" href="https://github.com/3ti-2020/crud-wiele-do-wielu-lukasz-lyzinski">github</a></li>
             </ul> 
         </div>
         <div class="main1">
@@ -26,11 +27,12 @@ $conn = new mysqli("sql7.freemysqlhosting.net", "sql7373168", "tmSP9U89xx", "sql
                 <th>id</th>
                 <th>imie</th>
                 <th>tytul</th>
+                <th>delete</th>
                 ");
 
                 while($row = $result->fetch_assoc() ){
                     echo("<tr class='row'>");
-                    echo("<td>".$row['id']."</td>"."<td>".$row['imie']."</td>"."<td>".$row['tytul']."</td>");
+                    echo("<td>".$row['id']."</td>"."<td>".$row['imie']."</td>"."<td>".$row['tytul']."</td>"."<td>"."<form action='delete.php' method='post'>"."<input type='hidden' name='id' value=".$row['id'].">"."<input type='submit' value='delete'>"."</form>"."</td>");
                     echo("</tr>");
                 }  
                 echo("</table>");
