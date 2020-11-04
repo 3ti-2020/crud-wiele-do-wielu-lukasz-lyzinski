@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Łukasz Łyziński gr. 1</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/39dd038290.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
+        <div class="main05">
+        <a href="https://github.com/3ti-2020/crud-wiele-do-wielu-lukasz-lyzinski"><div class="ikona"><i class="fab fa-github"></i></div></a>
+        </div>
         <div class="main0">
         <ul class="menu1">
                 <li class="pasek1"><a class="tekst" href="asd/index.html">Karta</a></li>
-                <li class="pasek1"><a class="tekst" href="https://github.com/3ti-2020/crud-wiele-do-wielu-lukasz-lyzinski">github</a></li>
             </ul> 
         </div>
         <div class="main1">

@@ -4,7 +4,7 @@
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
    grid-template-areas: 
-   "main0 main0 main1 main1"
+   "main05 main0 main1 main1"
    "main2 main2 main2 main2"
    ;
 }
@@ -43,6 +43,14 @@ th{
     align-items: center;
     
 }
+.main05{
+    grid-area: main05;
+    background-color: tan;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
 
 .main2{
     grid-area: main2;
@@ -72,9 +80,12 @@ th{
     background-color: red;
     font-size: 300%;
     padding:5px;
+    margin-right: 500px;
+    
     
     
 }
+
 
 .pasek1:hover{
     background-color: white;
@@ -86,3 +97,8 @@ th{
     
     
 }
+
+.ikona{
+    font-size: 600%;
+}
+
