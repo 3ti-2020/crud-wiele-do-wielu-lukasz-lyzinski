@@ -50,6 +50,8 @@ $conn = new mysqli("sql7.freemysqlhosting.net", "sql7374422", "NmBYIP3fmp", "sql
         <input type="submit" value="SEND">
     </form> 
 </div>
+<div class="main3">
+</div>
 </div>
 <script src="main.js"></script>
 </body>
