@@ -315,7 +315,8 @@ h2.imie {
     font-size: 300%;
     padding:5px;
     margin-left: 200px;
-    
+    transition: 0.5s;
+    border-radius: 15px;
     
 }
 
@@ -331,4 +332,10 @@ h2.imie {
 }
 .ikona{
     font-size: 600%;
+    color: white;
+    transition: 0.5s;
+}
+
+.ikona:hover{
+    color: beige;
 }
