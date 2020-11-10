@@ -90,7 +90,7 @@ th{
     background-color: red;
     font-size: 300%;
     padding:5px;
-    margin-right: 500px;
+    margin-right: 480px;
     border-radius: 15px;
     transition: 0.5s;
     
@@ -119,3 +119,17 @@ th{
     color: beige;
 }
 
+.wylog{
+    background-color: white;
+    color:black;
+    text-decoration: none;
+    font-size: 200%;
+    border-radius: 10px;
+    transition: 0.5s;
+    padding: 10px;
+    
+}
+
+.wylog:hover{
+    background-color: beige;
+}
