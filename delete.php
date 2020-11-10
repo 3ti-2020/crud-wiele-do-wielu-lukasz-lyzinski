@@ -3,5 +3,5 @@
     $id = $_POST['id'];
     $sql = "DELETE from lib_autor_tytul WHERE id='$id'";
     mysqli_query($conn, $sql);
-    header("Location: https://lukasz-lyzinski-crud.herokuapp.com/");
+    header("Location: https://lukasz-lyzinski-crud.herokuapp.com/logowanie.php");
 ?>

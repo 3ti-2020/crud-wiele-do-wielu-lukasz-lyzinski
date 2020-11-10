@@ -15,5 +15,5 @@ if ($conn->query($sql2) === TRUE) {
 $sql3 = "INSERT INTO `lib_autor_tytul`(`id`, `id_autor`, `id_tytul`) VALUES (NULL,$last_id1,$last_id2)";
 $conn->query($sql3);
 mysqli_close($conn);
-header("Location: https://lukasz-lyzinski-crud.herokuapp.com/");
+header("Location: https://lukasz-lyzinski-crud.herokuapp.com/logowanie.php");
 ?>

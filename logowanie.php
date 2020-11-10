@@ -1,3 +1,19 @@
+<?php
+    session_start();
+    if (!$_SESSION['login']) {
+        header("Location: index.php");
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sekretna strona</title>
+</head>
+<body>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,17 +60,18 @@ $conn = new mysqli("remotemysql.com", "5DpvsofhPC", "GnimeXVvsE", "5DpvsofhPC");
 ?>
 </div>
 <div class="main2">
+    <form class="pasek" action="insert.php" method="post">
+        <input type="text" name="imie" >
+        <input type="text" name="tytul">
+        <input type="submit" value="SEND">
+    </form> 
 </div>
 <div class="main3">
-<form action="loggg/login.php" method="post">
-        <br>Nazwa użytkownika</br>
-        <input type="text" name="login">
-        <br>Hasło</br>
-        <input type="text" name="haslo"><br>
-        <input type="submit" value="zaloguj">
-    </form>
 </div>
 </div>
 <script src="main.js"></script>
+</body>
+</html>
+
 </body>
 </html>
