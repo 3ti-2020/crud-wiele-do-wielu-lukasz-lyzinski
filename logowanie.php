@@ -67,6 +67,7 @@ $conn = new mysqli("remotemysql.com", "5DpvsofhPC", "GnimeXVvsE", "5DpvsofhPC");
     </form> 
 </div>
 <div class="main3">
+    <a href="loggg/logout.php" class="wylog">Wyloguj</a>
 </div>
 </div>
 <script src="main.js"></script>
