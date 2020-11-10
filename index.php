@@ -21,7 +21,7 @@
         <h1>Łukasz Łyziński nr 9</h1>
     <?php
 
-$conn = new mysqli("sql7.freemysqlhosting.net", "sql7374422", "NmBYIP3fmp", "sql7374422");
+$conn = new mysqli("remotemysql.com", "5DpvsofhPC", "GnimeXVvsE", "5DpvsofhPC");
 
                 $result = $conn->query("SELECT lib_autor_tytul.id as id,imie, tytul FROM lib_tytul, lib_autor_tytul, lib_autor WHERE lib_autor_tytul.id_autor=lib_autor.id_autor AND lib_autor_tytul.id_tytul=lib_tytul.id_tytul");
 

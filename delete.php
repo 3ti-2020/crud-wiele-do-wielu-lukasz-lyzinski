@@ -1,5 +1,5 @@
 <?php
-    $conn = new mysqli("sql7.freemysqlhosting.net", "sql7374422", "NmBYIP3fmp", "sql7374422");
+    $conn = new mysqli("remotemysql.com", "5DpvsofhPC", "GnimeXVvsE", "5DpvsofhPC");
     $id = $_POST['id'];
     $sql = "DELETE from lib_autor_tytul WHERE id='$id'";
     mysqli_query($conn, $sql);
