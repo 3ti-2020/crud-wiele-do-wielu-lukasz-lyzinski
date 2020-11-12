@@ -1,7 +1,7 @@
 
 
 .container{
-    height: 100vh;
+    height: 110vh;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,1fr);
@@ -42,7 +42,7 @@
 }
 
 .karta0{
-    height: 650px;
+    height: 725px;
     width:400px;
     box-shadow: black 5px;
     box-shadow: -1px 2px 17px 10px rgba(0,0,0,0.50);
@@ -135,7 +135,7 @@
     height: 100px;
     width: 400px;
     background-color: beige;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 0px 0px;
     box-shadow: black 5px;
     display: flex;
     align-items: flex-start;
@@ -342,9 +342,18 @@ h2.imie {
 .przyciskk{
     width: 400px;
     background-color: red;
-    height: 50px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0px 0px 20px 20px;
+    transition: 0.5s;
+    font-size: 200%;
     
+}
+
+.przyciskk:hover{
+    cursor: pointer;
+    background-color: tomato;
+
 }

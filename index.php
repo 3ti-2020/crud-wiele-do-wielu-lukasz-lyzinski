@@ -30,11 +30,12 @@ $conn = new mysqli("remotemysql.com", "5DpvsofhPC", "GnimeXVvsE", "5DpvsofhPC");
                 <th>id</th>
                 <th>imie</th>
                 <th>tytul</th>
+                <th>delete</th>
                 ");
 
                 while($row = $result->fetch_assoc() ){
                     echo("<tr class='row'>");
-                    echo("<td>".$row['id']."</td>"."<td>".$row['imie']."</td>"."<td>".$row['tytul']."</td>");
+                    echo("<td>".$row['id']."</td>"."<td>".$row['imie']."</td>"."<td>".$row['tytul']."</td>"."<td>"."<form action='delete.php' method='post'>"."<input type='hidden' name='id' value=".$row['id'].">"."<input type='submit' value='delete'>"."</form>"."</td>");
                     echo("</tr>");
                 }  
                 echo("</table>");
@@ -46,9 +47,9 @@ $conn = new mysqli("remotemysql.com", "5DpvsofhPC", "GnimeXVvsE", "5DpvsofhPC");
 </div>
 <div class="main3">
 <form action="loggg/login.php" method="post">
-        <br>Nazwa użytkownika</br>
+        <br>Nazwa użytkownika:"a"</br>
         <input type="text" name="login">
-        <br>Hasło</br>
+        <br>Hasło:"a"</br>
         <input type="text" name="haslo"><br>
         <input type="submit" value="zaloguj">
     </form>

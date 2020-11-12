@@ -30,7 +30,7 @@
         </div>
         <div class="main0">
         <ul class="menu1">
-                <li class="pasek1"><a class="tekst" href="asd/index.html">Karta</a></li>
+                <li class="pasek1"><a class="tekst" href="asd/index1.html">Karta</a></li>
             </ul> 
         </div>
         <div class="main1">
@@ -61,13 +61,13 @@ $conn = new mysqli("remotemysql.com", "5DpvsofhPC", "GnimeXVvsE", "5DpvsofhPC");
 </div>
 <div class="main2">
     <form class="pasek" action="insert.php" method="post">
-        <input type="text" name="imie" >
-        <input type="text" name="tytul">
+        <input type="text" name="imie" >imie 
+        <input type="text" name="tytul">tytul
         <input type="submit" value="SEND">
     </form> 
 </div>
 <div class="main3">
-    <a href="loggg/logout.php" class="wylog">Wyloguj</a>
+<a href="loggg/logout.php" class="wylog">Wyloguj</a>
 </div>
 </div>
 <script src="main.js"></script>
