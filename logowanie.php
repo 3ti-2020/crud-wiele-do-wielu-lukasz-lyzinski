@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sekretna strona</title>
+    <title>Łukasz Łyziński gr. 1</title>
 </head>
 <body>
 <!DOCTYPE html>
@@ -52,6 +52,32 @@ $conn = new mysqli("remotemysql.com", "5DpvsofhPC", "GnimeXVvsE", "5DpvsofhPC");
                 while($row = $result->fetch_assoc() ){
                     echo("<tr class='row'>");
                     echo("<td>".$row['id']."</td>"."<td>".$row['imie']."</td>"."<td>".$row['tytul']."</td>"."<td>"."<form action='delete.php' method='post'>"."<input type='hidden' name='id' value=".$row['id'].">"."<input type='submit' value='delete'>"."</form>"."</td>");
+                    echo("</tr>");
+                }  
+                echo("</table>");
+
+
+?>
+<h1>Wypożyczenia</h1>
+<?php
+
+$conn = new mysqli("remotemysql.com", "5DpvsofhPC", "GnimeXVvsE", "5DpvsofhPC");
+
+                $result = $conn->query("SELECT id,autor,tytul,data_wyp,data_odd from wyp");
+
+                echo("<table clas='tabelka'>");
+                echo("
+                <th>id</th>
+                <th>autor</th>
+                <th>tytul</th>
+                <th>data_wyp</th>
+                <th>data_odd</th>
+                <th>Oddaj</th>
+                ");
+
+                while($row = $result->fetch_assoc() ){
+                    echo("<tr class='row'>");
+                    echo("<td>".$row['id']."</td>"."<td>".$row['autor']."</td>"."<td>".$row['tytul']."</td>"."<td>".$row['data_wyp']."</td>"."<td>".$row['data_odd']."</td>"."<td>"."<form action='insert/oddaj.php' method='post'>"."<input type='hidden' name='id1' value=".$row['id'].">"."<input type='submit' value='oddaj'>"."</form>"."</td>");
                     echo("</tr>");
                 }  
                 echo("</table>");

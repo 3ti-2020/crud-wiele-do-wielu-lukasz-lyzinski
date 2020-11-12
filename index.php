@@ -30,6 +30,7 @@ $conn = new mysqli("remotemysql.com", "5DpvsofhPC", "GnimeXVvsE", "5DpvsofhPC");
                 <th>id</th>
                 <th>imie</th>
                 <th>tytul</th>
+                
                 ");
 
                 while($row = $result->fetch_assoc() ){

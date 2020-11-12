@@ -339,20 +339,20 @@ h2.imie {
 .ikona:hover{
     color: beige;
 }
-.przyciskk{
-    width: 400px;
-    background-color: red;
+
+
+.przyciskkk{
     height: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: red;
+    width: 400px;
     border-radius: 0px 0px 20px 20px;
+    cursor: pointer;
     transition: 0.5s;
     font-size: 200%;
-    
 }
 
-.przyciskk:hover{
+
+.przyciskkk:hover{
     cursor: pointer;
     background-color: tomato;
 
