@@ -15,6 +15,7 @@
         <div class="main0">
         <ul class="menu1">
                 <li class="pasek1"><a class="tekst" href="asd/index.html">Karta</a></li>
+                <li class="pasek1"><a class="tekst" href="egzamin/indexegz.html">Egzamin</a></li>
             </ul> 
         </div>
         <div class="main1">
