@@ -1,0 +1,60 @@
+.container{
+    height: 100vh;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+   grid-template-areas: 
+   "header header header "
+   "main main main"
+   "main main main"
+   ;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header{
+    grid-area: header;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: double 5px black
+}
+
+.main{
+    grid-area: main;
+    background-color: beige;
+    border-bottom: double 5px black;
+    border-right: double 5px black;
+    border-left: double 5px black;
+    overflow: scroll;
+    
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: saddlebrown;
+    border-left: double 5px black;
+    border-bottom: double 5px black
+}
+
+.tekst{
+    font-size: 300%;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.tekst1{
+    margin-left: 500px;
+    font-weight: bold;
+    font-size: 160%;
+}
+.tekst2{
+    margin-left: 500px;
+    font-size: 130%;
+}
+.odp{
+    margin-left: 500px;
+}
+p{
+    margin-left: 500px;  
+}
